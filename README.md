@@ -1,3 +1,3 @@
-# liamshort.dev
+# liamshort.github.io
 
-![cicd](https://github.com/liamshort/liamshort.dev/actions/workflows/main.workflow.yml/badge.svg)
+![cicd](https://github.com/liamshort/liamshort.github.io/actions/workflows/main.workflow.yml/badge.svg)
