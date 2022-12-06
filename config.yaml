@@ -1,0 +1,60 @@
+baseURL: http://liamshort.dev
+languageCode: en-uk
+title: liamshort
+theme: papermod
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+    menu:
+      main:
+        - name: archives
+          url: archives/
+          weight: 1
+        - name: search
+          url: search/
+          weight: 2
+        - name: tags
+          url: tags/
+          weight: 3
+        - name: podcasts
+          url: podcasts/
+          weight: 4
+        - name: profiles
+          url: profiles/
+          weight: 5
+        - name: cv
+          url: cv/
+          weight: 6
+
+params:
+  homeInfoParams:
+    Title: Senior Cloud Systems Developer Lead @ Cloudreach
+    Content: First Class BEng (Hons) Computer Security and Forensics @ Edinburgh Napier University
+  ShareButtons: ["linkedin", "twitter", "telegram"]
+  ShowCodeCopyButtons: true
+  disableThemeToggle: false
+  comments: true
+  disqusShortname: disqus_0HS77o0mij
+  ShowShareButtons: true
+  hideFooter: true
+  socialIcons:
+    - name: email
+      url: mailto:mail@liamshort.dev
+      title: email
+    - name: linkedin
+      url: https://linkedin.com/in/liamshort
+      title: linkedin
+    - name: github
+      url: https://github.com/liamshort
+      title: github
+      
+  assets:
+    favicon: https://liamshort.dev/favicons/cloud.svg

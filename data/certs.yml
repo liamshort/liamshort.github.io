@@ -1,0 +1,31 @@
+active:
+  - name: AWS Cloud Practioner
+    img: /badges/aws-cloud-practitioner.png
+    url: https://www.credly.com/badges/cd3772be-9416-44d1-83ef-63e9411367f1/public_url
+  - name: AWS Solutions Architect Associate
+    img: /badges/aws-solutions-architect-associate.png
+    url: https://www.credly.com/badges/2c9de2b6-b6fb-423d-8fae-f100625d43bb/public_url
+  - name: AWS Developer Associate
+    img: /badges/aws-developer-associate.png
+    url: https://www.credly.com/badges/7e6b11eb-7f78-409d-a00b-9e8a041eb822/public_url
+  - name: AWS SysOps Associate
+    img: /badges/aws-sysops-associate.png
+    url: https://www.credly.com/badges/44ab2f36-d3ad-4283-a60d-34cbd5622ab1/public_url
+  - name: AWS Solutions Architect Professional
+    img: /badges/aws-solutions-architect-professional.png
+    url: https://www.credly.com/badges/5e72119c-6bcb-41d6-a9be-80ee01c2ad69/public_url
+  - name: Hashicorp Terraform Associate
+    img: /badges/hashicorp-terraform-associate.png
+    url: https://www.credly.com/badges/46acfd90-7be0-45b8-bdc3-b3f6196fc79a/public_url
+
+expired:
+  - name: AWS Security Specialty
+    img: /badges/aws-security-specialty.png
+    url: https://www.credly.com/badges/9a819c02-b48b-44b8-9dcd-79eda6f28b19/public_url
+  - name: Microsoft Azure Assocaiate
+    img: /badges/microsoft-azure-associate.png
+    url: https://www.credly.com/badges/6096c908-51b2-41f1-812f-952cf8439cff/public_url
+  - name: GCP Cloud Engineer Associate
+    img: /badges/gcp-cloud-engineer-associate.png
+  - name: GCP Cloud Architect Professional
+    img: /badges/gcp-cloud-architect-professional.png

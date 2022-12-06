@@ -1,0 +1,19 @@
+<div id=searchbox>
+<form id="searchform" action=javascript:podcasts_func()>
+<input id=searchInput autofocus placeholder="have a nosey..." aria-label=search type=text autocomplete=off name=name>
+<br>
+<input type=number name=podcasts value=3 min=0 max=15 autofocus placeholder="podcasts ↵" aria-label=search type=search autocomplete=off>
+<label for=podcasts> podcasts</label>
+<br>
+<input type=number name=episodes value=3 min=0 max=40 autofocus placeholder="episodes ↵" aria-label=search type=search autocomplete=off>
+<label for=podcasts> episodes</label>
+<br>
+<input type="submit" value="submit">
+</form>
+</div>
+<br>
+<div id=loader_temp>
+</div>
+<div id=content>
+</div>
+<script src="/scripts/podcasts.js"></script>
