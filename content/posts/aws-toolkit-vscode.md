@@ -8,12 +8,16 @@ tags: ["devops"]
 # Overview
 
 This website uses custom APIs hosted in AWS, built using API Gateway and backend Lambda Functions. To reduce the time taken for development and testing, I recently started using the AWS Toolkit extension for Visual Studio Code, which allows users to interact directly with the following services from their IDE:
-- AWS Lambda and Amazon API Gateway
-- AWS Elastic Beanstalk
-- Amazon Elastic Container Service
-- AWS Explorer
-- CloudFormation Editor
-- Project Templates
+- API Gateway
+- CloudFormation
+- Cloudwatch Logs
+- ECR
+- ECS
+- IoT
+- Lambda
+- S3
+- Step Functions
+- Systems Manager
 
 Although it is possible to interact with these services via the AWS API, the extension does provide a nice UI.
 
