@@ -33,7 +33,7 @@ Store Lambda test payloads alongside your application code, this ensures the tes
 
 ```
 {
-  "rawQueryString": "wordle?found=beast&exclude=&letter0=&letter1=&letter2=&letter3=&letter4="
+  "rawQueryString": "wordle?found=bea&exclude=&letter0=b&letter1=e&letter2=&letter3=&letter4="
 }
 ```
 
