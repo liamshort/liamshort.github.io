@@ -8,10 +8,6 @@ tags: [
 ]
 ---
 
-# TL;DR
-
-Manage Git Repositories using the following Terraform module for [GitHub](https://github.com/liamshort/tf-mod-github-repos).
-
 # Overview
 
 Just had a great idea for a new project and want to get coding ASAP? The first task is often setting up a Git repository to host the code. If you're like me and love to tinkerer, you can quickly accumulate repositories which makes things feel cluttered! Why not manage your repositories via Terraform?
@@ -29,12 +25,12 @@ My first real exposure to Terraform was in 2020, when preparing for a new client
 
 # The Module
 
-I put together a simple Terraform Module which can be used to manage Git repositores for GitHub (the same logic can be applied for other Git management tools such as CodeCommit or Gitea):
+I put together a simple Terraform Module which can be used to manage Git repositories for GitHub (the same logic can be applied for other Git management tools such as CodeCommit or Gitea):
 - [GitHub](https://github.com/liamshort/tf-mod-github-repos)
 
 ## Usage
 
-The modules all follow the same configuration, containing a `config.yml` file which contains the definitions of our repositories in HCL. Based on the contents of this file we can create, update or delete repositires. Below is an example of a GitHub repository definition from the `config.yml`:
+The modules all follow the same configuration, containing a `config.yml` file which contains the definitions of our repositories in HCL. Based on the contents of this file we can create, update or delete repositories. Below is an example of a GitHub repository definition from the `config.yml`:
 
 ```
 my-super-cool-repo:

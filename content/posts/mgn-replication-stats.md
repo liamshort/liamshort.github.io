@@ -21,7 +21,7 @@ Users can define in the following parameters:
 
 The script can be found [here](https://github.com/liamshort/mgn-parser-tool).
 
-# Preqrequisites
+# Prerequisites
 
 - Using Python3
 - Assumed into the target AWS account with an identity that permits the `mgn:DescribeSourceServers` action
