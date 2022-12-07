@@ -6,8 +6,6 @@ function wordle_func(){
 
   wordle = document.querySelector("#content");
 
-  var style = getComputedStyle(document.body);
-
   var form = document.getElementById("searchform");
   var found = form.elements.found.value.toLowerCase();
   var exclude = form.elements.exclude.value.toLowerCase();
@@ -33,113 +31,65 @@ function wordle_func(){
       "&letter4=" +
       String(letter4)
   )
-    .then((response) => response.json())
-    .then((words) => {
-      words["no_duplicates"].forEach((word) => {
-        link = document.createElement("a");
-        link.setAttribute("href", "https://www.dictionary.com/browse/" + word);
-        link.setAttribute("target", "_blank");
-        link.setAttribute("id", "wordle");
-        item = document.createElement("div");
-        var word_processed = "";
-        for (var i = 0; i < word.length; i++) {
-          if (
-            word.charAt(i) == letter0 ||
-            word.charAt(i) == letter1 ||
-            word.charAt(i) == letter2 ||
-            word.charAt(i) == letter3 ||
-            word.charAt(i) == letter4
-          ) {
-            word_processed =
-              word_processed +
-              '<span style="color:' +
-              style.getPropertyValue("--green") +
-              ';">' +
-              word.charAt(i) +
-              "</span>";
-          } else if (found.includes(word.charAt(i))) {
-            word_processed =
-              word_processed +
-              '<span style="color: ' +
-              style.getPropertyValue("--orange") +
-              ';">' +
-              word.charAt(i) +
-              "</span>";
-          } else {
-            word_processed = word_processed + word.charAt(i);
-          }
+  .then((response) => response.json())
+  .then((words) => {
+    words["no_duplicates"].forEach((word) => {
+      link = document.createElement("a");
+      link.setAttribute("href", "https://www.dictionary.com/browse/" + word);
+      link.setAttribute("target", "_blank");
+      link.setAttribute("id", "wordle");
+      item = document.createElement("div");
+      var word_processed = "";
+      for (var i = 0; i < word.length; i++) {
+        if (
+          word.charAt(i) == letter0 ||
+          word.charAt(i) == letter1 ||
+          word.charAt(i) == letter2 ||
+          word.charAt(i) == letter3 ||
+          word.charAt(i) == letter4
+        ) {
+          word_processed = word_processed + '<span style="color:green;">' + word.charAt(i) + "</span>";
+        } else if (found.includes(word.charAt(i))) {
+          word_processed = word_processed + '<span style="color:orange;">' + word.charAt(i) + "</span>";
+        } else {
+          word_processed = word_processed + word.charAt(i);
         }
-        item.innerHTML = word_processed;
-        link.appendChild(item);
-        wordle.appendChild(link);
-      });
-
-      words["duplicates"].forEach((word) => {
-        link = document.createElement("a");
-        link.setAttribute("href", "https://www.dictionary.com/browse/" + word);
-        link.setAttribute("target", "_blank");
-        link.setAttribute("id", "wordle");
-        item = document.createElement("div");
-        var word_processed = "";
-        for (var i = 0; i < word.length; i++) {
-          if (word.charAt(i) == letter0) {
-            word_processed =
-              word_processed +
-              '<span style="color: ' +
-              style.getPropertyValue("--green") +
-              ';">' +
-              word.charAt(i) +
-              "</span>";
-          } else if (word.charAt(i) == letter1) {
-            word_processed =
-              word_processed +
-              '<span style="color: ' +
-              style.getPropertyValue("--green") +
-              ';">' +
-              word.charAt(i) +
-              "</span>";
-          } else if (word.charAt(i) == letter2) {
-            word_processed =
-              word_processed +
-              '<span style="color: ' +
-              style.getPropertyValue("--green") +
-              ';">' +
-              word.charAt(i) +
-              "</span>";
-          } else if (word.charAt(i) == letter3) {
-            word_processed =
-              word_processed +
-              '<span style="color: ' +
-              style.getPropertyValue("--green") +
-              ';">' +
-              word.charAt(i) +
-              "</span>";
-          } else if (word.charAt(i) == letter4) {
-            word_processed =
-              word_processed +
-              '<span style="color: ' +
-              style.getPropertyValue("--green") +
-              ';">' +
-              word.charAt(i) +
-              "</span>";
-          } else if (found.includes(word.charAt(i))) {
-            word_processed =
-              word_processed +
-              '<span style="color: ' +
-              style.getPropertyValue("--orange") +
-              ';">' +
-              word.charAt(i) +
-              "</span>";
-          } else {
-            word_processed = word_processed + word.charAt(i);
-          }
-        }
-        item.innerHTML = word_processed;
-        link.appendChild(item);
-        wordle.appendChild(link);
-      });
-
-      var elem = document.getElementById("loader");
-      elem.parentNode.removeChild(elem);
+      }
+      item.innerHTML = word_processed;
+      link.appendChild(item);
+      wordle.appendChild(link);
     });
+
+    words["duplicates"].forEach((word) => {
+      link = document.createElement("a");
+      link.setAttribute("href", "https://www.dictionary.com/browse/" + word);
+      link.setAttribute("target", "_blank");
+      link.setAttribute("id", "wordle");
+      item = document.createElement("div");
+      var word_processed = "";
+      for (var i = 0; i < word.length; i++) {
+        if (word.charAt(i) == letter0) {
+          word_processed = word_processed +'<span style="color:green;">' + word.charAt(i) + "</span>";
+        } else if (word.charAt(i) == letter1) {
+          word_processed = word_processed + '<span style="color:green;">' + word.charAt(i) + "</span>";
+        } else if (word.charAt(i) == letter2) {
+          word_processed = word_processed + '<span style="color:green;">' + word.charAt(i) + "</span>";
+        } else if (word.charAt(i) == letter3) {
+          word_processed = word_processed + '<span style="color:green;">' + word.charAt(i) + "</span>";
+        } else if (word.charAt(i) == letter4) {
+          word_processed = word_processed + '<span style="color:green;">' + word.charAt(i) + "</span>";
+        } else if (found.includes(word.charAt(i))) {
+          word_processed = word_processed + '<span style="color:orange;">' + word.charAt(i) + "</span>";
+        } else {
+          word_processed = word_processed + word.charAt(i);
+        }
+      }
+      item.innerHTML = word_processed;
+      link.appendChild(item);
+      wordle.appendChild(link);
+    });
+
+    var elem = document.getElementById("loader");
+    elem.parentNode.removeChild(elem);
+  });
 }
