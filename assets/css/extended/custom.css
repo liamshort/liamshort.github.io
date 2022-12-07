@@ -72,3 +72,9 @@ audio {
     font-size: small;
     font-style: italic;
 }
+
+#wordle {
+    margin: 5px;
+    padding: 5px;
+    color: var(--foreground);
+}

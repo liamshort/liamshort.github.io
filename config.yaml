@@ -60,4 +60,4 @@ params:
       title: github
       
   assets:
-    favicon: https://liamshort.dev/favicons/cloud.svg
+    favicon: /favicons/cloud.svg
