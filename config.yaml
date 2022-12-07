@@ -15,24 +15,27 @@ languages:
     weight: 1
     menu:
       main:
-        - name: archives
-          url: archives/
-          weight: 1
-        - name: search
-          url: search/
-          weight: 2
-        - name: tags
-          url: tags/
-          weight: 3
-        - name: podcasts
-          url: podcasts/
-          weight: 4
-        - name: profiles
-          url: profiles/
-          weight: 5
         - name: cv
           url: cv/
+          weight: 1
+        - name: archives
+          url: archives/
+          weight: 2
+        - name: search
+          url: search/
+          weight: 3
+        - name: tags
+          url: tags/
+          weight: 4
+        - name: podcasts
+          url: podcasts/
+          weight: 5
+        - name: profiles
+          url: profiles/
           weight: 6
+        - name: wordle
+          url: wordle/
+          weight: 7
 
 params:
   homeInfoParams:
