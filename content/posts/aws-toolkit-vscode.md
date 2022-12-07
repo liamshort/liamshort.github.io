@@ -1,5 +1,5 @@
 ---
-title: "Aws Toolkit and VSCode"
+title: "AWS Toolkit Extension for VSCode"
 date: 2022-05-12T13:09:27+01:00
 draft: false
 tags: ["devops"]
