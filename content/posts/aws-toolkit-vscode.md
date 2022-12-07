@@ -25,7 +25,13 @@ Installation of the extension is easy. Within Visual Studio Code > Extensions > 
 
 # Usage
 
-Store Lambda test payloads alongside your application code, this ensures the test payloads are easily accessibe and version controlled. To test a Lambda Function, open up the toolkit > `Lambda` > right click on my function > `Invoke on AWS` > either paste the payload or upload from file > `Invoke`. The response will be returned in the OUTPUT console of Visual Studio Code.
+Store Lambda test payloads alongside your application code, this ensures the test payloads are easily accessibe and version controlled. To test a Lambda Function, open up the toolkit > `Lambda` > right click on my function > `Invoke on AWS` > either paste the payload or upload from file > `Invoke`. The response will be returned in the OUTPUT console of Visual Studio Code. For example, when testing my Wordle Helper API, I can use the following payload:
+
+```
+{
+  "rawQueryString": "wordle?found=beast&exclude=&letter0=&letter1=&letter2=&letter3=&letter4="
+}
+```
 
 If CloudWatch Logs are permitted for the Lambda Function, users can view these by opening up the toolkit > `CloudWatch Logs` > right click on a Log Group > `View Log Stream...` > select a Log Stream.
 
