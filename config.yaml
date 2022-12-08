@@ -48,6 +48,8 @@ params:
   disqusShortname: disqus_0HS77o0mij
   ShowShareButtons: true
   ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowToc: true
   hideFooter: true
   socialIcons:
     - name: email
